@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+p {
+	/*font-size: 80px;*/
+}
+a {
+	text-decoration : none;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	opacity: 0.7;
+	background-color: #E6E6E6;
+	position: fixed;
+}
+
+#left_nav {
+	margin-left: 5%;
+	/*background-color: pink;*/
+	width: 80%;
+	float: left;
+}
+
+#left_nav ul li:hover{
+	color:#FC02FF
+}
+#techi li:hover {
+	color: white;
+}
+
+
+#techi{
+	margin-top: 30px;
+	margin-left: 30px;
+	position: absolute;
+	background-color: red;
+	display:none;
+}
+#techi ul{
+
+}
+
+#techi li{
+	list-style-type: none;
+	width: 45px;
+	line-height: 40px;
+	font-size: 16px;
+
+}
+#nav_search{
+	width: 30%;
+	float: right;
+	position: relative;
+}
+
+#search {
+	line-height: 15px;
+}
+
+nav ul li{
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+	line-height: 40px;
+
+}
+#right_nav {
+	/*background-color: #612F98;*/
+	width: 15%;
+	float: left;
+
+}
+
+
+/*导航*/
+
+#content {
+	height: 400px;
+	width: 100%;
+	background-color: #E5E5E5;
+	opacity: 0.4;
+	font-size: 30px;
+	line-height: 400px;
+	text-align: center;
+	color: #FC0107;
+}
+
+#ad {
+	height: 600px;
+	width: 100%;
+	background-color:#755E9F;
+}
+#footer {
+	height: 200px;
+	width: 100%;
+	background-color:#0A1927;
+}
+#footer p {
+	color: white;
+	font-size: 40px;
+	/*vertical-align: middle;*/
+	text-align: center;
+	/*line-height:200px;*/
+
+}
+#footer img {
+	height: 170px;
+	width: 200px;
+	background-size: 100%;
+	
+	margin-top: -195px;
+	position: relative;
+}
