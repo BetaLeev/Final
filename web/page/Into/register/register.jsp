@@ -7,6 +7,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+<script src="../../../jquery-3.2.1.min.js"></script>
+
+<script src="../../../js/register/register_form.js"></script>
 <html>
 <head>
 	<title>Register</title>
@@ -71,18 +74,19 @@
 	</h2>
 	<hr>
 	<p>&nbsp</p>
-<form  method="get" action="verify_register.jsp" role="form">
+
+<form  method="post" action="verify_register.jsp" role="form">
 	<%--<div>--%>
-		<input class="form-control" type="text" name="username" placeholder="User">
+		<input class="form-control" type="text" name="username" placeholder="User(Like 'leev')" id="user">
 	<%--</div>--%>
 	<%--<div>--%>
-		<input class="form-control" type="text" name="phone" placeholder="Phone">
+		<input class="form-control" type="text" name="phone" placeholder="Phone" id="phone">
 	<%--</div>--%>
 	<%--<div>--%>
-		<input class="form-control"  type="password" name="password" placeholder="Password">
+		<input class="form-control"  type="password" name="password" placeholder="Password" id="password">
 	<%--</div>--%>
 	<%--<div>--%>
-		<input class="form-control" type="password" name="confirm" placeholder="Confirm Password">
+		<input class="form-control" type="password" name="confirm" placeholder="Confirm Password" id="con_password">
 	<%--</div>--%>
 	<%--<div>--%>
 		<input class="form-control" type="text" name="code" maxlength="4" placeholder="Code" id="code">
@@ -90,21 +94,14 @@
 		<p></p>
 		<div class=".btn">
 			
-			<button type="submit" class="btn btn-primary btn-lg btn-block" onclick="">Register</button>
+			<button id="submit-register" type="button" class="btn btn-primary btn-lg btn-block" onclick="">Register</button>
+		
 		</div>
 	
-	<%--</div>--%>
-	<%--<div>--%>
-		<%--<input  type="submit" value="Resigter">--%>
-	<%--</div>--%>
-	<%--<div><a href="www.tok7.com">Back to Main</a></div>--%>
 </form>
 </div>
 <script type="text/javascript">
-    function refresh() {
-        //IE存在缓存,需要new Date()实现更换路径的作用
-        document.getElementById("image").src="../code.jsp?"+new Date();
-    }
+
 </script>
 </body>
 </html>
