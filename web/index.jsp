@@ -6,33 +6,24 @@
 	<link rel="icon" href="img/icon.ico" type="image/x-icon">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/jquery-3.2.1.min.js"></script>
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<%--<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>--%>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<%--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
 	
-	<%@ page import="java.io.*,java.util.*" %>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
 	<style>
-	.carousel-inner {
+		
+		.carousel-inner {
 		margin-top: -20px;
 		height: 500px;
-		
 	}
 		h3 {
 			text-align: center;
 		}
-		/*#login li{*/
-			/*background-color: #b9def0;*/
-			/*margin-left: 4px;*/
-			/*border-radius: 20px;*/
-			/*!*height: 40px;*!*/
-			/**/
-		/*}*/
-	/*#login li:hover {*/
-		/*background-color: #a6e1ec;*/
-	/*}*/
+		
+		#load_img {
+			width: 100%;
+			height: 500px;
+		}
 	</style>
 </head>
 <body>
@@ -68,42 +59,30 @@
 							<li><a href="#">YouTube</a></li>
 							<li class="divider"></li>
 							<li><a href="#">BiliBili</a></li>
-						
 						</ul>
 					</li>
 				</ul>
+				
 				<form class="navbar-form navbar-left" role="search">
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="search">
 					</div>
 					<button type="submit" class="btn btn-info">Search</button>
 				</form>
+				<%--搜索结束--%>
+				
+				
 				<ul class="nav navbar-nav navbar-right" id="login">
 					<li>
-						<%--<button class="btn btn-info">注册</button>--%>
 						<a href="page/Into/login/login.jsp" data-toggle="modal" id="user">Sign in</a>
 					</li>
-					
+					<%--登陆--%>
 					<li>
-						<%--<button class="btn btn-success">登录</button>--%>
 					<a href="page/Into/register/register.jsp" data-toggle="modal">Register</a>
 					</li>
-					
-					<%--<li class="dropdown">--%>
-						<%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact me<span class="caret"></span></a>--%>
-						<%--<ul class="dropdown-menu" role="menu">--%>
-							<%--&lt;%&ndash;点击弹出图片二维码&ndash;%&gt;--%>
-							<%--<li><a href="#">QQ</a></li>--%>
-							<%----%>
-							<%--<li class="divider"></li>--%>
-							<%--<li><a href="#">facebook</a></li>--%>
-							<%--<li class="divider"></li>--%>
-							<%--<li><a href="#">twitter</a></li>--%>
-							<%--<li class="divider"></li>--%>
-							<%--<li><a href="#">e-mail</a></li>--%>
-						<%--</ul>--%>
-					<%--</li>--%>
+					<%--注册--%>
 				</ul>
+			
 			</div>
 		</div>
 	</nav>
@@ -117,17 +96,18 @@
 			
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
+				
+				
 				<div class="item active">
 					<%--图片固定像素--%>
-					<img src="img/2.jpg" alt="...1">
+					<img alt="...1" id="load_img">
 					<div class="carousel-caption">
-					
 					</div>
 				</div>
+				
 				<div class="item">
 					<img src="img/1.jpg" alt="...2">
 					<div class="carousel-caption">
-					
 					</div>
 				</div>
 			
@@ -210,6 +190,7 @@
 	</script>
 </c:if>
 
+<script src="js/index.js"></script>
 
 </body>
 </html>

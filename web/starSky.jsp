@@ -9,7 +9,7 @@
         margin: 0;
     }
     </style>
-		<script src="jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<canvas id="canvas" width="1920" height="960">
