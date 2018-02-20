@@ -11,11 +11,10 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
 	<style>
-		
 		.carousel-inner {
 		margin-top: -20px;
 		height: 500px;
-	}
+		}
 		h3 {
 			text-align: center;
 		}
@@ -121,7 +120,7 @@
 				
 				<div class="item active">
 					<%--图片固定像素--%>
-					<img alt="...1" id="load_img"/>
+					<img alt="...1" id="load_img" src=""/>
 					<div class="carousel-caption">
 					</div>
 				</div>
@@ -148,8 +147,8 @@
 	
 	<div class="side">
 		<ul>
-			<li style="border:none;">
-				<a href="javascript:goTop();" class="sidetop">
+			<li style="border:none;" id="sidetop">
+				<a class="sidetop">
 					<img src="img/top.png"/>
 				</a>
 			</li>
