@@ -11,4 +11,8 @@ $(document).ready(function(){
         $("#load_img").attr("src", this.src);
     }
 
+    function goTop() {
+        $('html,body').animate({'scrollTop': 0}, 600);
+    }
 });
+

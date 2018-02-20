@@ -24,6 +24,27 @@
 			width: 100%;
 			height: 500px;
 		}
+		
+		.side li {
+			list-style-type: none;
+			background-color: black;
+			display: inline-block;
+			top: 80%;
+			height: 35px;
+			width: 35px;
+			left: 96.5%;
+			z-index: 100;
+			position: fixed;
+		}
+		
+		.side img {
+			height: 35px;
+			width: 35px;
+		}
+		
+		.side li:hover {
+			background-color: red
+		}
 	</style>
 </head>
 <body>
@@ -100,7 +121,7 @@
 				
 				<div class="item active">
 					<%--图片固定像素--%>
-					<img alt="...1" id="load_img">
+					<img alt="...1" id="load_img"/>
 					<div class="carousel-caption">
 					</div>
 				</div>
@@ -124,71 +145,145 @@
 			</a>
 		</div>
 		<p></p>
-		<section class="lanmu container">
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail">
-						<img src="img/kaola-1.png" alt="...">
-						
-						<div class="caption">
-							<h3>qq</h3>
-							<p></p>
-							<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail">
-						<img src="img/kaola-2.png" alt="...">
-						
-						<div class="caption">
-							<h3>starSky</h3>
-							<p></p>
-							<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail">
-						<img src="img/kaola-3.png" alt="...">
-						
-						<div class="caption">
-							<h3>Poster</h3>
-							<p></p>
-							<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center" role="button">Enter</a></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail">
-						<img src="img/kaola-4.png" alt="...">
-						
-						<div class="caption">
-							<h3>Music</h3>
-							<p></p>
-							<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a></p>
-						</div>
+	
+	<div class="side">
+		<ul>
+			<li style="border:none;">
+				<a href="javascript:goTop();" class="sidetop">
+					<img src="img/top.png"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<%--侧边栏结束--%>
+	
+	<section class="lanmu container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-1.png" alt="...">
+					
+					<div class="caption">
+						<h3>qq</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-2.png" alt="...">
+					
+					<div class="caption">
+						<h3>starSky</h3>
+						<p></p>
+						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-3.png" alt="...">
+					
+					<div class="caption">
+						<h3>Poster</h3>
+						<p></p>
+						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
+						                          role="button">Enter</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-4.png" alt="...">
+					
+					<div class="caption">
+						<h3>Music</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="lanmu container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-1.png" alt="...">
+					
+					<div class="caption">
+						<h3>qq</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-2.png" alt="...">
+					
+					<div class="caption">
+						<h3>starSky</h3>
+						<p></p>
+						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-3.png" alt="...">
+					
+					<div class="caption">
+						<h3>Poster</h3>
+						<p></p>
+						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
+						                          role="button">Enter</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-4.png" alt="...">
+					
+					<div class="caption">
+						<h3>Music</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 </div>
 
 <div>
+	<hr>
 	<p style="text-align: center"><a href="page/Root/Login/login.jsp">All Rights@tok7.com</a></p>
 </div>
-<c:if test="${not empty sessionScope.get(session_user)}">
-	<script>
-		var user = document.getElementById("user");
-		user.innerHTML = <%=session.getAttribute("session_user")%>;
-		user.href="#";
-		console.log(user.innerHTML)
-	</script>
-</c:if>
+<%--<c:if test="${not empty sessionScope.get(session_user)}">--%>
+<%----%>
+<%--<script>--%>
+<%--var user = document.getElementById("user");--%>
+<%--user.innerHTML = <%=session.getAttribute("session_user")%>;--%>
+<%--user.href="#";--%>
+<%--console.log(user.innerHTML)--%>
+<%--</script>--%>
+<%--</c:if>--%>
 
 <script src="js/index.js"></script>
 

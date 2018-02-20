@@ -10,7 +10,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <html>
 <head>
-	<title>Title</title>
+	<title></title>
 </head>
 <body>
 <c:set var="user" value="${param.get('user')}" scope="request"/>
@@ -26,16 +26,6 @@
 </sql:query>
 
 
-<%--<%--%>
-	<%--String rand = session.getAttribute("code").toString();--%>
-	<%--String input = request.getParameter("code");--%>
-	<%--if(rand.equals(input)){--%>
-	    <%----%>
-<%--//		out.println("<script language='javascript'>same();</script>");--%>
-	<%--}else{--%>
-		<%--out.print("<script language='javascript'>different();</script>");--%>
-	<%--}--%>
-<%--%>--%>
 <c:set var="rand" value="${sessionScope.get('code')}" scope="session"/>
 <c:set var="input" value="${param.get('code')}" scope="request"/>
 

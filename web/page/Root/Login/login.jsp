@@ -1,47 +1,128 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: alphb
-  Date: 13/11/2017
-  Time: 23:43
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Administrator</title>
-	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-	.form-group {
-		width: 30%;
-		margin: auto auto;
-		background-color: pink;
-	}
+	<!-- Standard Meta -->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	
-	.form-control {
-		width: 200px;
-		margin-top: 10px;
-	}
-	#code {
-		width: 135px;
-		display: inline;
-	}
-		#image {
+	<!-- Site Properties -->
+	<title>Login Manager</title>
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/site.css">
+	
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/container.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/header.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/image.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/menu.css">
+	
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/divider.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/segment.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/form.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/input.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/button.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/list.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/message.css">
+	<link rel="stylesheet" type="text/css" href="../../../Semantic-UI/dist/components/icon.css">
+	
+	<script src="../../../js/jquery-3.2.1.min.js"></script>
+	<script src="../../../Semantic-UI/dist/components/form.js"></script>
+	<script src="../../../Semantic-UI/dist/components/transition.js"></script>
+	
+	<style type="text/css">
+		body {
+			background-color: #DADADA;
+		}
 		
+		body > .grid {
+			height: 100%;
+		}
+		
+		.image {
+			margin-top: -100px;
+		}
+		
+		.column {
+			max-width: 450px;
 		}
 	</style>
+	<script>
+        $(document)
+            .ready(function () {
+                $('.ui.form')
+                    .form({
+                        fields: {
+                            email: {
+                                identifier: 'email',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please enter your e-mail'
+                                    },
+                                    {
+                                        type: 'email',
+                                        prompt: 'Please enter a valid e-mail'
+                                    }
+                                ]
+                            },
+                            password: {
+                                identifier: 'password',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please enter your password'
+                                    },
+                                    {
+                                        type: 'length[6]',
+                                        prompt: 'Your password must be at least 6 characters'
+                                    }
+                                ]
+                            }
+                        }
+                    })
+                ;
+            })
+        ;
+	</script>
 </head>
 <body>
-<div style="text-align: center">
-	<form action="verify_login.jsp" method="post">
-	<div><label for="">ID</label><input type="text" name="user"></div>
-	<div><label for="">PASSWORD</label><input type="password" name="password"></div>
-		<div><label for="">Code：</label><input type="text" name="code" maxlength="4">
-			<img id="image" border="0" onclick="refresh()" src="../../Into/code.jsp" title="changeimage">
+
+<div class="ui middle aligned center aligned grid">
+	<div class="column">
+		<h2 class="ui teal image header">
+			<%--<img src="assets/images/logo.png" class="image">--%>
+			<div class="content">
+				Log-in to your manage
+			</div>
+		</h2>
+		<form class="ui large form">
+			<div class="ui stacked segment">
+				<div class="field">
+					<div class="ui left icon input">
+						<i class="user icon"></i>
+						<input type="text" name="email" placeholder="E-mail address">
+					</div>
+				</div>
+				<div class="field">
+					<div class="ui left icon input">
+						<i class="lock icon"></i>
+						<input type="password" name="password" placeholder="Password">
+					</div>
+				</div>
+				<div class="ui fluid large teal submit button">Login</div>
+			</div>
+			
+			<div class="ui error message"></div>
+		
+		</form>
+		
+		<div class="ui message">
+			join to us? <a href="#">Join</a>
 		</div>
-		<div><input type="submit" value="Log In"></div>
-	</form>
+	</div>
 </div>
 
 </body>
+
 </html>
