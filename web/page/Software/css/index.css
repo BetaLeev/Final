@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    z-index: 100;
+    position: relative;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a {
+    margin-left: 15%;
+    line-height: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+.box {
+    margin-top: -30px;
+    width: 25%;
+    /*margin-left: 1%;*/
+    background-color: #54c8ff;
+    float: left;
+    height: 200px;
+}
+
+.box p {
+    text-align: center;
+}
+
+.box p:hover {
+    color: #9627ba;
+}
+
+#contact {
+    margin: 300px auto;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    background-color: #3affff;
+}
+
+#contact p:hover {
+    color: #9f3a38;
+}
