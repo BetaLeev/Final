@@ -11,6 +11,11 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
 	<style>
+		body {
+			background-color: aliceblue;
+		}
+		
+		
 		.carousel-inner {
 		margin-top: -20px;
 		height: 500px;
@@ -28,14 +33,26 @@
 			list-style-type: none;
 			background-color: black;
 			display: inline-block;
-			top: 80%;
+			top: 86%;
 			height: 35px;
 			width: 35px;
-			left: 96.5%;
-			z-index: 100;
+			left: 94.5%;
+			z-index: 1010;
 			position: fixed;
 		}
 		
+		.feedback img {
+			top: 1390px;
+			height: 100px;
+			width: 100px;
+			left: 60%;
+			position: absolute;
+			z-index: 101;
+		}
+		
+		#jpg img {
+			width: 400px;
+		}
 		.side img {
 			height: 35px;
 			width: 35px;
@@ -47,7 +64,9 @@
 	</style>
 </head>
 <body>
+<div id="nav">
 
+</div>
 <div>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
@@ -126,7 +145,7 @@
 				</div>
 				
 				<div class="item">
-					<img src="img/1.jpg" alt="...2">
+					<img src="img/2.jpg" alt="...2" style="width: 100%;height: 500px"/>
 					<div class="carousel-caption">
 					</div>
 				</div>
@@ -155,6 +174,9 @@
 		</ul>
 	</div>
 	<%--侧边栏结束--%>
+	<div class="feedback">
+		<img src="img/feedback.jpg" alt="">
+	</div>
 	
 	<section class="lanmu container">
 		<div class="row">
@@ -273,6 +295,7 @@
 <div>
 	<hr>
 	<p style="text-align: center"><a href="page/Root/Login/login.jsp">All Rights@tok7.com</a></p>
+	<p style="text-align: center">TencentQQ:469700722</p>
 </div>
 <%--<c:if test="${not empty sessionScope.get(session_user)}">--%>
 <%----%>
