@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
-<script src="../../../jquery-3.2.1.min.js"></script>
+<%--<script src="../../../jquery-3.2.1.min.js"></script>--%>
 
 <script src="../../../js/register/register_form.js"></script>
 <html>
@@ -94,7 +94,8 @@
 		<p></p>
 		<div class=".btn">
 			
-			<button id="submit-register" type="button" class="btn btn-primary btn-lg btn-block" onclick="">Register</button>
+			<button id="submit-register" type="submit" class="btn btn-primary btn-lg btn-block" onclick="">Register
+			</button>
 		
 		</div>
 	
