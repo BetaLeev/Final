@@ -17,5 +17,8 @@
 <p>
 	<a href="spoken.jsp">和外国人聊天注意的</a>
 </p>
+<p>
+	<a href="low.html">别再用low形容别人没品位，老外根本不这么说！</a>
+</p>
 </body>
 </html>

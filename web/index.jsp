@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Leev</title>
+	<title>Welocme</title>
 	<link rel="icon" href="img/icon.ico" type="image/x-icon">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -41,14 +41,14 @@
 			position: fixed;
 		}
 		
-		.feedback img {
-			top: 1390px;
-			height: 100px;
-			width: 100px;
-			left: 60%;
-			position: absolute;
-			z-index: 101;
-		}
+		/*.feedback img {*/
+		/*top: 1390px;*/
+		/*height: 100px;*/
+		/*width: 100px;*/
+		/*left: 60%;*/
+		/*position: absolute;*/
+		/*z-index: 101;*/
+		/*}*/
 		
 		#jpg img {
 			width: 400px;
@@ -60,6 +60,33 @@
 		
 		.side li:hover {
 			background-color: red
+		}
+		
+		#footer_menu {
+			height: 300px;
+			background-color: #b9def0;
+		}
+		
+		#footer_menu div {
+			float: left;
+		}
+		
+		#footer_menu li {
+			list-style-type: none;
+			font-size: 2.4rem;
+			margin-bottom: 5%;
+		}
+		
+		#footer_menu_left {
+			width: 55%;
+		}
+		
+		#footer_img {
+			width: 45%;
+			margin-top: 25px;
+			/*float: left;*/
+			height: 250px;
+			width: 250px;
 		}
 	</style>
 </head>
@@ -173,130 +200,146 @@
 			</li>
 		</ul>
 	</div>
-	<%--侧边栏结束--%>
-	<div class="feedback">
-		<img src="img/feedback.jpg" alt="">
+	
+	
+	<section class="lanmu container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-1.png" alt="...">
+					
+					<div class="caption">
+						<h3>qq</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-2.png" alt="...">
+					
+					<div class="caption">
+						<h3>starSky</h3>
+						<p></p>
+						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-3.png" alt="...">
+					
+					<div class="caption">
+						<h3>Poster</h3>
+						<p></p>
+						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
+						                          role="button">Enter</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-4.png" alt="...">
+					
+					<div class="caption">
+						<h3>Music</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="lanmu container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-1.png" alt="...">
+					
+					<div class="caption">
+						<h3>qq</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-2.png" alt="...">
+					
+					<div class="caption">
+						<h3>starSky</h3>
+						<p></p>
+						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-3.png" alt="...">
+					
+					<div class="caption">
+						<h3>Poster</h3>
+						<p></p>
+						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
+						                          role="button">Enter</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/kaola-4.png" alt="...">
+					
+					<div class="caption">
+						<h3>Music</h3>
+						<p></p>
+						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+<footer>
+	<div id="footer_menu">
+		<div id="footer_menu_left">
+			<h2>&nbsp</h2>
+			<ul>
+				
+				<li>Message</li>
+				<li>Help</li>
+				<li>About</li>
+			</ul>
+		</div>
+		
+		<div>
+			<img id="footer_img" src="img/feedback.jpg" alt="">
+		</div>
 	</div>
 	
-	<section class="lanmu container">
-		<div class="row">
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-1.png" alt="...">
-					
-					<div class="caption">
-						<h3>qq</h3>
-						<p></p>
-						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-2.png" alt="...">
-					
-					<div class="caption">
-						<h3>starSky</h3>
-						<p></p>
-						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-3.png" alt="...">
-					
-					<div class="caption">
-						<h3>Poster</h3>
-						<p></p>
-						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
-						                          role="button">Enter</a></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-4.png" alt="...">
-					
-					<div class="caption">
-						<h3>Music</h3>
-						<p></p>
-						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="lanmu container">
-		<div class="row">
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-1.png" alt="...">
-					
-					<div class="caption">
-						<h3>qq</h3>
-						<p></p>
-						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-2.png" alt="...">
-					
-					<div class="caption">
-						<h3>starSky</h3>
-						<p></p>
-						<p class="text-center"><a href="starSky.jsp" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-3.png" alt="...">
-					
-					<div class="caption">
-						<h3>Poster</h3>
-						<p></p>
-						<p class="text-center"><a href="imoc/index.html" class="btn btn-success text-center"
-						                          role="button">Enter</a></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-					<img src="img/kaola-4.png" alt="...">
-					
-					<div class="caption">
-						<h3>Music</h3>
-						<p></p>
-						<p class="text-center"><a href="#" class="btn btn-success text-center" role="button">Enter</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div>
+		<hr>
+		<p style="text-align: center"><a href="page/Root/Login/login.jsp">All Rights@tok7.com</a></p>
+		<p style="text-align: center">TencentQQ:469700722</p>
+	</div>
+</footer>
 
-</div>
 
-<div>
-	<hr>
-	<p style="text-align: center"><a href="page/Root/Login/login.jsp">All Rights@tok7.com</a></p>
-	<p style="text-align: center">TencentQQ:469700722</p>
-</div>
 <%--<c:if test="${not empty sessionScope.get(session_user)}">--%>
 <%----%>
 <%--<script>--%>
