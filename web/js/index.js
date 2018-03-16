@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+
     $("#sidetop").click(function () {
         $('html,body').animate({'scrollTop': 0}, 600);
     });

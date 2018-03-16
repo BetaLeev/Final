@@ -13,8 +13,15 @@
 	<style>
 		body {
 			background-color: aliceblue;
+			cursor: url("img/cursor.cur"), default;
+			
 		}
 		
+		body a {
+			cursor: url("img/pointer.cur"), pointer;
+		}
+		
+		/*body｛cursor：pointer｝*/
 		
 		.carousel-inner {
 		margin-top: -20px;
@@ -80,14 +87,8 @@
 		#footer_menu_left {
 			width: 55%;
 		}
-		
-		#footer_img {
-			width: 45%;
-			margin-top: 25px;
-			/*float: left;*/
-			height: 250px;
-			width: 250px;
-		}
+	
+	
 	</style>
 </head>
 <body>
@@ -328,7 +329,7 @@
 		</div>
 		
 		<div>
-			<img id="footer_img" src="img/feedback.jpg" alt="">
+			<%--<img id="footer_img" src="img/feedback.jpg" alt="">--%>
 		</div>
 	</div>
 	
