@@ -12,8 +12,9 @@
 </head>
 <body>
 <form action="verify_increase.jsp" method="post">
-	<div><label for="">用户名</label><input type="text"></div>
-	<div><label for="">密码</label><input type="text"></div>
+	<div><label for="">用户名</label><input type="text" name="name"></div>
+	<div><label for="">用户名</label><input type="text" name="phone"></div>
+	<div><label for="">密码</label><input type="text" name="password"></div>
 	<input type="submit" value="提交">
 </form>
 </body>

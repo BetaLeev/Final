@@ -1,5 +1,13 @@
 
 $(document).ready(function(){
+    // $("#user").parent.addClass("dropdown");
+    // var userHtml = $("#user").html();
+    // if (userHtml != "Sign In" ){
+    // //     userHtml = "Sign In";
+    // alert($("#user").className);
+    // $("#user").attr("href","page/Into/login/login.jsp");
+    // // }
+    // alert($("#user").className);
 
 
     $("#sidetop").click(function () {

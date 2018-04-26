@@ -2,55 +2,85 @@
 	margin: 0;
 	padding: 0;
 }
-p {
-	/*font-size: 80px;*/
-}
+
 a {
 	text-decoration : none;
 }
-nav {
-	height: 40px;
-	width: 100%;
-	position: absolute;
-	top: 0px;
-	opacity: 0.7;
-	background-color: #E6E6E6;
-	position: fixed;
+
+body {
+    background-color: aliceblue;
+    cursor: url("../img/cursor.cur"), default;
+
 }
+
+body a {
+    cursor: url("../img/pointer.cur"), pointer;
+}
+
+
 
 #left_nav {
 	margin-left: 5%;
-	/*background-color: pink;*/
 	width: 80%;
 	float: left;
 }
 
-#left_nav ul li:hover{
-	color:#FC02FF
+h3 {
+    text-align: center;
 }
+
+#load_img {
+    width: 100%;
+    height: 500px;
+}
+
+.side li {
+    list-style-type: none;
+    background-color: black;
+    display: inline-block;
+    top: 186%;
+    height: 35px;
+    width: 35px;
+    left: 94.5%;
+    z-index: 1010;
+    position: fixed;
+}
+
+#jpg img {
+    width: 400px;
+}
+
+.side img {
+    height: 35px;
+    width: 35px;
+}
+
+#footer_menu {
+    height: 300px;
+    background-color: #b9def0;
+}
+
+#footer_menu div {
+    float: left;
+}
+
+#footer_menu li {
+    list-style-type: none;
+    font-size: 2.4rem;
+    margin-bottom: 5%;
+}
+
+#footer_menu_left {
+    width: 55%;
+}
+
+
+
 #techi li:hover {
 	color: white;
 }
 
 
-#techi{
-	margin-top: 30px;
-	margin-left: 30px;
-	position: absolute;
-	background-color: red;
-	display:none;
-}
-#techi ul{
-
-}
-
-#techi li{
-	list-style-type: none;
-	width: 45px;
-	line-height: 40px;
-	font-size: 16px;
-
-}
 #nav_search{
 	width: 30%;
 	float: right;
@@ -65,11 +95,10 @@ nav ul li{
 	list-style-type: none;
 	float: left;
 	margin-left: 20px;
-	line-height: 40px;
+    line-height: 60px;
 
 }
 #right_nav {
-	/*background-color: #612F98;*/
 	width: 15%;
 	float: left;
 
@@ -79,9 +108,8 @@ nav ul li{
 /*导航*/
 
 #content {
-	height: 400px;
+    height: 300px;
 	width: 100%;
-	background-color: #E5E5E5;
 	opacity: 0.4;
 	font-size: 30px;
 	line-height: 400px;
@@ -102,16 +130,14 @@ nav ul li{
 #footer p {
 	color: white;
 	font-size: 40px;
-	/*vertical-align: middle;*/
 	text-align: center;
-	/*line-height:200px;*/
 
 }
 #footer img {
 	height: 170px;
 	width: 200px;
 	background-size: 100%;
-	
 	margin-top: -195px;
 	position: relative;
 }
+

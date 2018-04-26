@@ -38,18 +38,21 @@
 <table class="table table-hover">
 	<tr>
 		<th>ID</th>
-		<th>User</th>
-		<th>Detail</th>
-		<th>Phone</th>
+		<th>用户</th>
+		
+		<th>电话</th>
+		<th>更多</th>
+		<th>删除</th>
 	</tr>
 	<c:forEach var="row" items="${result.rows}" begin="${param.start}" end="${param.start+pagesize-1}">
 		
 		<tr>
 			<td><c:out value="${row.id}"/></td>
 			<td><c:out value="${row.user}"/></td>
-			<td><a href="modify.jsp?id=<c:out value="${row.id}"/>">Edit</a></td>
+			
 			<td><c:out value="${row.phone}"/></td>
-			<%--<td><a href="drop.jsp?id=<c:out value="${row.id}"/>">Delete</a></td>--%>
+			<td><a href="modify.jsp?id=<c:out value="${row.id}"/>">Edit</a></td>
+			<td><a href="drop.jsp?id=<c:out value="${row.id}"/>">Delete</a></td>
 		</tr>
 	</c:forEach>
 </table>

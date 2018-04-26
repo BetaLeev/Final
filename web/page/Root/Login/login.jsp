@@ -47,44 +47,46 @@
 			max-width: 450px;
 		}
 	</style>
-	<script>
-        $(document)
-            .ready(function () {
-                $('.ui.form')
-                    .form({
-                        fields: {
-                            email: {
-                                identifier: 'email',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please enter your e-mail'
-                                    },
-                                    {
-                                        type: 'email',
-                                        prompt: 'Please enter a valid e-mail'
-                                    }
-                                ]
-                            },
-                            password: {
-                                identifier: 'password',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please enter your password'
-                                    },
-                                    {
-                                        type: 'length[6]',
-                                        prompt: 'Your password must be at least 6 characters'
-                                    }
-                                ]
-                            }
-                        }
-                    })
-                ;
-            })
-        ;
-	</script>
+	
+	<%--<script>--%>
+	<%--$(document)--%>
+	<%--.ready(function () {--%>
+	<%--$('.ui.form')--%>
+	<%--.form({--%>
+	<%--fields: {--%>
+	<%--email: {--%>
+	<%--identifier: 'email',--%>
+	<%--rules: [--%>
+	<%--{--%>
+	<%--type: 'empty',--%>
+	<%--prompt: 'Please enter your e-mail'--%>
+	<%--},--%>
+	<%--{--%>
+	<%--type: 'email',--%>
+	<%--prompt: 'Please enter a valid e-mail'--%>
+	<%--}--%>
+	<%--]--%>
+	<%--},--%>
+	<%--password: {--%>
+	<%--identifier: 'password',--%>
+	<%--rules: [--%>
+	<%--{--%>
+	<%--type: 'empty',--%>
+	<%--prompt: 'Please enter your password'--%>
+	<%--},--%>
+	<%--{--%>
+	<%--type: 'length[6]',--%>
+	<%--prompt: 'Your password must be at least 6 characters'--%>
+	<%--}--%>
+	<%--]--%>
+	<%--}--%>
+	<%--}--%>
+	<%--})--%>
+	<%--;--%>
+	<%--})--%>
+	<%--;--%>
+	<%--</script>--%>
+	
 </head>
 <body>
 
@@ -96,12 +98,14 @@
 				Log-in to your manage
 			</div>
 		</h2>
-		<form class="ui large form">
+		<form class="ui large form" method="post" action="verify_login.jsp">
 			<div class="ui stacked segment">
 				<div class="field">
 					<div class="ui left icon input">
 						<i class="user icon"></i>
-						<input type="text" name="email" placeholder="E-mail address">
+						<%--<input type="text" name="email" placeholder="E-mail address">--%>
+						<input type="text" name="user" placeholder="User">
+					
 					</div>
 				</div>
 				<div class="field">
@@ -110,7 +114,9 @@
 						<input type="password" name="password" placeholder="Password">
 					</div>
 				</div>
-				<div class="ui fluid large teal submit button">Login</div>
+				<div class="ui fluid large teal submit button">
+					<input class="ui fluid large teal submit button" type="submit" value="Login">
+				</div>
 			</div>
 			
 			<div class="ui error message"></div>

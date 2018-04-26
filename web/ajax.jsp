@@ -10,9 +10,7 @@
 <head>
 	<title>Title</title>
 </head>
-<body>
-<!DOCTYPE html>
-<html>
+
 <head>
 	<meta charset="utf-8">
 	<%--<script url="jquery-3.2.1.min.js"></script>--%>
@@ -28,16 +26,19 @@
                 // IE6, IE5 浏览器执行代码
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
+
+            alert(xmlhttp.readyState);
+
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    var o, b;
+                    var o, b, c;
                     o = JSON.parse(xmlhttp.responseText);
                     b = o.name;
-                    console.log(o.name);
-                    document.getElementById("myDiv").innerHTML = b;
+                    c = o.sex;
+                    document.getElementById("myDiv").innerHTML = b + " " + c;
                 }
             }
-            xmlhttp.open("GET", "ajax.json", true);
+            xmlhttp.open("get", "ajax.json", true);
             xmlhttp.send();
         }
 	</script>

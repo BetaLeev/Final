@@ -12,31 +12,48 @@
 	<title>Title</title>
 </head>
 <body>
+<%--<c:set var="root" value="${param.get('user')}" scope="request"/>--%>
+<%--<c:set var="pw" value="${param.get('password')}" scope="request"/>--%>
+
+<%--<c:set var="rand" value="${sessionScope.get('code')}" scope="session"/>--%>
+<%--<c:set var="input" value="${param.get('code')}" scope="request"/>--%>
+
+<%--<c:if test="${rand != input}">--%>
+<%--<script>--%>
+<%--alert("Code error");--%>
+<%--location.href = "login.jsp"--%>
+<%--</script>--%>
+<%--</c:if>--%>
+<%--<c:if test="${rand.equals(input)}">--%>
+<%--<c:if test="${root.equals('521')}">--%>
+<%--<c:if test="${pw != '125'}">--%>
+<%--<script>--%>
+<%--alert("Password error");--%>
+<%--location.href = "login.jsp"--%>
+<%--</script>--%>
+<%--</c:if>--%>
+<%--<c:if test="${pw.equals('125')}">--%>
+<%--<c:redirect url="http://localhost:8888/page/Root/Manage/Index/index.jsp"/>--%>
+<%--&lt;%&ndash;<c:redirect url="http://www.tok7.com/page/Root/Manage/Index/index.jsp"/>&ndash;%&gt;--%>
+<%--</c:if>--%>
+<%--</c:if>--%>
+<%--</c:if>--%>
+
 <c:set var="root" value="${param.get('user')}" scope="request"/>
 <c:set var="pw" value="${param.get('password')}" scope="request"/>
 
-<c:set var="rand" value="${sessionScope.get('code')}" scope="session"/>
-<c:set var="input" value="${param.get('code')}" scope="request"/>
 
-<c:if test="${rand != input}">
-	<script>
-		alert("Code error");
-		location.href = "login.jsp"
-	</script>
-</c:if>
-<c:if test="${rand.equals(input)}">
-<c:if test="${root.equals('521')}">
-	<c:if test="${pw != '125'}">
+<c:if test="${root.equals('root')}">
+	<c:if test="${pw != 'root'}">
 		<script>
             alert("Password error");
             location.href = "login.jsp"
 		</script>
 	</c:if>
-	<c:if test="${pw.equals('125')}">
-	<c:redirect url="http://localhost:8888/page/Root/Manage/Index/index.jsp"/>
+	<c:if test="${pw.equals('root')}">
+		<c:redirect url="http://localhost:8888/page/Root/Manage/Index/index.jsp"/>
 		<%--<c:redirect url="http://www.tok7.com/page/Root/Manage/Index/index.jsp"/>--%>
 	</c:if>
-</c:if>
 </c:if>
 </body>
 </html>

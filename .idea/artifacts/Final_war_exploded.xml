@@ -11,6 +11,7 @@
           <element id="file-copy" path="$USER_HOME$/Desktop/jar/jstl.jar" />
           <element id="file-copy" path="$USER_HOME$/Desktop/jar/standard.jar" />
           <element id="file-copy" path="$USER_HOME$/Desktop/jar/mysql-connector-java-5.1.42-bin.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jar/jsqrcode-master.zip" />
         </element>
       </element>
     </root>
